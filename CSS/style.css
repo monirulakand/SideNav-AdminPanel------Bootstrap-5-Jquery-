@@ -8,6 +8,7 @@
     padding-top: 20px;
     transition: 0.1s;
     background-color: #b21f2d;
+    z-index: 10;
 }
 
 .sideNavClose{
@@ -20,4 +21,21 @@
     padding-top: 20px;
     transition: 0.1s;
     background-color: #b21f2d;
+}
+
+.ContentOverlay{
+    display: block;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 5;
+}
+
+.ContentOverlayClose{
+    display: none;
 }
