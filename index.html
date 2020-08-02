@@ -9,17 +9,87 @@
 </head>
 <body>
 
-
-<nav class="navbar fixed-top navbar-dark bg-dark">
+<nav class="navbar shadow-sm fixed-top navbar-light bg-light">
     <div class="container-fluid">
-        <a id="NavMenuBar" class="navbar-brand" href="#"><i class="fa fa-bars"></i></a>
+        <a id="NavMenuBar" class="navbar-brand navMenuBar" href="#"><i class="fa fa-bars"></i></a>
     </div>
 </nav>
 
-<div id="SideNavID" class="sideNavClose">
+<div id="SideNavID" class="sideNavClose mt-5">
+    <a class="nav-menu-item ml-2" href="#"><i class="fa m-2 fa-home"></i><span class="menuText d-none">Home</span></a><br>
+    <a class="nav-menu-item ml-2" href="#"><i class="fa m-2 fa-envelope"></i><span class="menuText d-none">Contact</span></a><br>
+    <a class="nav-menu-item ml-2" href="#"><i class="fa m-2 fa-question-circle"></i><span class="menuText d-none">About</span></a><br>
+    <a class="nav-menu-item ml-2" href="#"><i class="fa m-2 fa-globe"></i><span class="menuText d-none">Settings</span></a><br>
 </div>
 
 <div id="ContentOverlayID" class="ContentOverlay">
+</div>
+
+<div id="Content" class="Content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 p-2">
+                <div class="card w-100" >
+                    <img src="https://cdn.pixabay.com/photo/2015/09/05/07/28/writing-923882_960_720.jpg" class="card-img-top w-100" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="card w-100">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/05/07/28/writing-923882_960_720.jpg" class="card-img-top w-100" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="card w-100">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/05/07/28/writing-923882_960_720.jpg" class="card-img-top w-100" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="card w-100">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/05/07/28/writing-923882_960_720.jpg" class="card-img-top w-100" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="card w-100">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/05/07/28/writing-923882_960_720.jpg" class="card-img-top w-100" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="card w-100">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/05/07/28/writing-923882_960_720.jpg" class="card-img-top w-100" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
@@ -31,11 +101,13 @@
     $('#NavMenuBar').click(function () {
         let SideNavID=$('#SideNavID');
         let ContentOverlayID=$('#ContentOverlayID');
+        let menuText=$('.menuText');
 
         if(SideNavID.hasClass('sideNavClose')){
             SideNavID.removeClass('sideNavClose')
             SideNavID.addClass('sideNavOpen')
 
+            menuText.removeClass('d-none');
             ContentOverlayID.removeClass('ContentOverlayClose')
             ContentOverlayID.addClass('ContentOverlay')
         }
@@ -43,6 +115,7 @@
             SideNavID.removeClass('sideNavOpen')
             SideNavID.addClass('sideNavClose')
 
+            menuText.addClass('d-none');
             ContentOverlayID.removeClass('ContentOverlay')
             ContentOverlayID.addClass('ContentOverlayClose')
         }
@@ -51,11 +124,13 @@
     $('#ContentOverlayID').click(function () {
         let SideNavID=$('#SideNavID');
         let ContentOverlayID=$('#ContentOverlayID');
+        let menuText=$('.menuText');
 
         if(SideNavID.hasClass('sideNavClose')){
             SideNavID.removeClass('sideNavClose')
             SideNavID.addClass('sideNavOpen')
 
+            menuText.removeClass('d-none');
             ContentOverlayID.removeClass('ContentOverlayClose')
             ContentOverlayID.addClass('ContentOverlay')
         }
@@ -63,6 +138,7 @@
             SideNavID.removeClass('sideNavOpen')
             SideNavID.addClass('sideNavClose')
 
+            menuText.addClass('d-none');
             ContentOverlayID.removeClass('ContentOverlay')
             ContentOverlayID.addClass('ContentOverlayClose')
         }
