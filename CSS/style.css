@@ -1,0 +1,23 @@
+.sideNavOpen{
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.1s;
+    background-color: #b21f2d;
+}
+
+.sideNavClose{
+    height: 100%;
+    width: 00px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.1s;
+    background-color: #b21f2d;
+}

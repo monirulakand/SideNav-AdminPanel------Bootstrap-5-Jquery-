@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/fontawesome.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+<body>
+
+
+<nav class="navbar fixed-top navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a id="NavMenuBar" class="navbar-brand" href="#"><i class="fa fa-bars"></i></a>
+    </div>
+</nav>
+
+<div id="SideNavID" class="sideNavClose">
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+
+<script type="text/javascript">
+
+    $('#NavMenuBar').click(function () {
+        let SideNavID= $('#SideNavID');
+
+        if (SideNavID.hasClass('sideNavClose')){
+            SideNavID.removeClass('sideNavClose')
+            SideNavID.addClass('sideNavOpen')
+        }
+        else{
+            SideNavID.removeClass('sideNavOpen')
+            SideNavID.addClass('sideNavClose')
+        }
+    })
+
+</script>
+
+
+</body>
+</html>
